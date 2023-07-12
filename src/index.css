@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base already adds some styling to fonts */
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+.button-hover-shadow {
+  @apply transition ease-in-out hover:shadow-md hover:shadow-black/10 hover:dark:shadow-black/60 duration-100;
+}
+
+.button-outline {
+  /* @apply outline outline-black outline-2; */
+  /* ring has more customization */
+  @apply rounded-md ring-1 ring-black;
+}
